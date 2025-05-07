@@ -28,7 +28,6 @@ def analyze():
         model = load_model()
         video_bytes= a.analyze(file=file, confidence=confidence)
         st.session_state.done = True
-        st.session_state.results = results
         st.session_state.video = video_bytes
 
         col1, col2, col3 = st.columns([1, 2, 1])
